@@ -1,0 +1,136 @@
+.main__container {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__container__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.main__container__title h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.main__container__title p {
+    line-height: 1.5;
+    font-size: 22px;
+    max-width: 900px;
+}
+
+.cards__changer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 1000px;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__text h3 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card__text>h4>strong {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.card__text>h4 {
+    margin-bottom: 50px;
+}
+
+.card__text p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.card img {
+    max-width: 41vw;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.main__button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 20px;
+    max-width: max-content;
+}
+
+
+
+@media(max-width:1090px) {
+    .card {
+        gap: 50px;
+    }
+
+    .card__text {
+        max-width: 35vw;
+    }
+
+    .card__text h3 {
+        font-size: 40px;
+    }
+
+    .card__text h4 {
+        margin-bottom: 20px;
+    }
+
+    .card__text p {
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:700px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        max-width: 60vw;
+    }
+
+    .card__text {
+        max-width: 55vw;
+    }
+
+    .main__container__title h2 {
+        font-size: 50px;
+    }
+
+    .main__container__title p {
+        font-size: 20px;
+    }
+
+    .card__text h3 {
+        font-size: 33px;
+    }
+}

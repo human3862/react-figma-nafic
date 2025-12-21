@@ -1,0 +1,150 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 30px;
+    height: 60px;
+    color: white;
+    position: relative;
+    height: 90px;
+}
+
+
+
+.BlurBg {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navLinks a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 0 4vw;
+}
+
+.navLinks a.active {
+    text-decoration: underline;
+}
+
+.langSwitcher {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.langSwitcher a {
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+.langSwitcher a.active {
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+.black a {
+    color: black;
+}
+
+.black .burger span {
+    background-color: black;
+}
+
+
+@media(max-width:950px) {
+    .navLinks {
+        gap: 5px;
+    }
+
+    .langSwitcher {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px 20px 10px;
+    }
+
+    .navLinks a {
+        color: white;
+    }
+
+    .burger {
+        display: flex;
+        z-index: 10000;
+    }
+
+    .langSwitcher {
+        display: none;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #222;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+
+        z-index: 9999;
+    }
+
+    .navLinks.open,
+    .langSwitcher.open {
+        right: 0;
+    }
+
+    .activeBurger:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .activeBurger:nth-child(2) {
+        opacity: 0;
+    }
+
+    .activeBurger:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media(max-width:425px) {
+    .navbar {
+        padding: 5px 10px 5px;
+    }
+
+    .burger span {
+        width: 18px;
+        height: 2px;
+    }
+}

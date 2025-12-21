@@ -1,0 +1,97 @@
+.header {
+    background-image: url(../../img/HomeBg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 800px;
+    margin-bottom: 60px;
+}
+
+
+
+.header__title {
+    max-width: 600px;
+    margin: 5vw;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 100px;
+}
+
+.main__container h1 {
+    color: white;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+@media(max-width: 1024px) {
+    .header {
+        height: 600px;
+    }
+
+    .main__container {
+        margin: 58px ;
+        }
+    
+    .main__container h1 {
+        font-size: 54px;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        height: 400px;
+    }
+
+        .main__container h1 {
+            font-size: 40px;
+        }
+
+    .main__container {  
+        justify-content: center;
+        margin: 20px;
+    }
+}
+
+
+@media(max-width:580px) {
+    .main__container {
+        justify-content: left;
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 425px) {
+    .header {
+        height: 249px;
+    }
+
+    .main__container {
+        margin: 20px;
+    }
+
+    .main__container h1 {
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 375px) {
+    .header {
+        height: 210px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .main__container h1 {
+            font-size: 20px;
+        }
+
+                 .header {
+                     height: 200px;
+                 }
+}

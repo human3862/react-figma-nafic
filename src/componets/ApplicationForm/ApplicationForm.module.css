@@ -1,0 +1,65 @@
+.application__form {
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.application__form h3 {
+    font-size: 24px;
+    color: rgba(21, 89, 77, 1);
+}
+
+.application__form input,
+.application__form textarea,
+.application__form select {
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(118, 118, 118, 1);
+}
+
+.application__form>.filled {
+    background-color: #ffffff ;
+    color: black;
+}
+
+.application__form input:focus,
+.application__form textarea:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.application__form button {
+    background-color: rgba(21, 89, 77, 1);
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(21, 89, 77, 1);
+    color: white;
+    transition: 0.3s;
+
+}
+
+
+@media(max-width:879px) {
+    .application__form {
+        width: 267px;
+        padding: 13px;
+        gap: 10px;
+    }
+}
+
+
+@media(max-width:580px) {
+    .application__form {
+        display: none;
+    }
+}
