@@ -155,4 +155,8 @@
     .content__items {
         gap: 20px;
     }
+
+    .container__card {
+        max-width: 255px;
+    }
 }

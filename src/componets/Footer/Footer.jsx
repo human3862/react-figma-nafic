@@ -18,39 +18,39 @@ export const Footer = () => {
                     <div className={cl.footer__column}>
                         <h3>Главная</h3>
                         <ul>
-                                <li><a href="*">Почему мы?</a></li>
-                                <li><a href="*">Цифры</a></li>
-                                <li><a href="*">Наши проекты</a></li>
-                                <li><a href="*">Наша команда</a></li>
-                                <li><a href="*">Контакты</a></li>
+                                <li>Почему мы?</li>
+                                <li>Цифры</li>
+                                <li>Наши проекты</li>
+                                <li>Наша команда</li>
+                                <li>Контакты</li>
                         </ul>
                     </div>
                     <div className={cl.footer__column}>
                         <h3>Наши проекты</h3>
                         <ul>
-                                <li><a href="">ЖК Boulevard</a></li>
-                                <li><a href="">ЗД "Oq Tosh"</a></li>
-                                <li><a href="">ЖК Zenith</a></li>
-                                <li><a href="">ЖК Darkhan</a></li>
+                                <li>ЖК Boulevard</li>
+                                <li>ЗД "Oq Tosh"</li>
+                                <li>ЖК Zenith</li>
+                                <li>ЖК Darkhan</li>
                         </ul>
                     </div>
                     <div className={cl.footer__column}>
                         <h3>Служба поддержки</h3>
                         <ul>
-                                <li><a href="">Аккаунт</a></li>
-                                <li><a href="">Помощь</a></li>
-                                <li><a href="">Связаться с нами</a></li>
+                                <li>Аккаунт</li>
+                                <li>Помощь</li>
+                                <li>Связаться с нами</li>
                         </ul>
                     </div>
                     <div className={cl.footer__column}>
                         <h3>Контакты</h3>
                         <ul>
-                                <li> <img src={frame} alt="контакты" /> <a href="">+998 99 663 70 00</a></li>
-                                <li> <img src={frame2} alt="почта" /><a href="mailto:nafisinterlux@gmail.com">nafisinterlux@gmail.com</a></li>
-                                <li> <img src={frame3} alt="местоположение" /><a href="">
+                                <li> <img src={frame} alt="контакты" /> +998 99 663 70 00</li>
+                                <li> <img src={frame2} alt="почта" />nafisinterlux@gmail.com</li>
+                                <li> <img src={frame3} alt="местоположение" />
                                     Ташкент, Лайлитугон 1/6,
                                         Чорсу ж/м
-                                </a></li>
+                                </li>
                         </ul>
                     </div>
                 </div>

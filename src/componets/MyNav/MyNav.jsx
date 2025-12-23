@@ -13,7 +13,7 @@ export const MyNav = ({ bgClass, color }) => {
 
   return (
     <nav className={navbarClasses}>
-      <MyLogotype isColor={color}/>
+      <MyLogotype isColor={color} />
 
       <div className={cl.burger} onClick={() => setIsOpen(!isOpen)}>
         <span className={isOpen ? cl.activeBurger : ''}></span>
@@ -23,7 +23,7 @@ export const MyNav = ({ bgClass, color }) => {
 
       <ul className={`${cl.navLinks} ${isOpen ? cl.open : ''}`}>
         <li>
-          <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? cl.active : ''}>
+          <NavLink to="/" end onClick={closeMenu} className={({ isActive }) => isActive ? cl.active : ''}>
             Главная
           </NavLink>
         </li>
@@ -38,15 +38,19 @@ export const MyNav = ({ bgClass, color }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/#contacts__block" onClick={closeMenu}  className={({ isActive }) => isActive ? cl.active : ''}>
+          <a
+            href="/#contacts__block"
+            onClick={closeMenu}
+            className={cl.navLink}
+          >
             Контакты
-          </NavLink>
+            </a>
         </li>
       </ul>
 
       <ul className={`${cl.langSwitcher} ${isOpen ? cl.open : ''}`}>
-          <li><a href="">Ru</a></li>
-          <li><a href="">En</a></li>
+        <li><a href="">Ru</a></li>
+        <li><a href="">En</a></li>
       </ul>
     </nav>
   )

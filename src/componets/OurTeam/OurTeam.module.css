@@ -27,14 +27,22 @@
 }
 
 
-@media(max-width: 530px) {
+
+@media(max-width:515px) {
     .main__container__title {
+        text-align: center;
         margin-bottom: 50px;
     }
+
     .main__container__title h2 {
         font-size: 50px;
     }
+
     .container__items {
         gap: 37px;
+    }
+
+    .container__items img {
+        width: 40%;
     }
 }
